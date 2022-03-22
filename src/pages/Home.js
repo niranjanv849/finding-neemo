@@ -23,7 +23,7 @@ function Home() {
 
       <div className="home__body">
         <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/408px-Google_2015_logo.svg.png"
+          src="https://i.ibb.co/ZxrbB5q/finding-neemo-logo.png"
           alt="Search Daniel"
         />
         <div className="home__inputContainer">

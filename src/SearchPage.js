@@ -15,8 +15,8 @@ import { MoreVert } from "@material-ui/icons";
 //ac547a9613a4b8420
 function SearchPage() {
   const [{ term }, dispatch] = useStateValue();
-  const { data } = useGoogleSearch(term);
-  // const data = Response;
+  // const { data } = useGoogleSearch(term);
+  const data = Response;
   // console.log(data);
   return (
     <div className="searchPage">
@@ -24,7 +24,7 @@ function SearchPage() {
         <Link to="/">
           <img
             className="searchPage__logo"
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/240px-Google_%22G%22_Logo.svg.png"
+            src="https://i.ibb.co/ZxrbB5q/finding-neemo-logo.png"
             alt="Home"
           />
         </Link>
