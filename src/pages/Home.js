@@ -1,7 +1,6 @@
 import React from "react";
 import "./Home.css";
 import { Link } from "react-router-dom";
-import { AppsOutlined } from "@material-ui/icons";
 import { Avatar } from "@material-ui/core";
 import Search from "../Search";
 import Footer from "./Footer";

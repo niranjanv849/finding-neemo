@@ -54,7 +54,7 @@
   display: none !important;
 }
 
-.theme__switch {
+.theme__switche {
   box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
     rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
   background-color: white;
@@ -63,16 +63,16 @@
   width: 200px;
   height: 35px;
   font-size: 14px;
-  margin-top: 2%;
   position: absolute;
   left: 43%;
-  padding-top: 3px;
+  padding-top: 5px;
+  margin-top: 30px;
 }
 
-.theme__switch:hover {
+.theme__switche:hover {
   box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
     rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-  background-color: rgb(19, 18, 18);
+  background-color: black;
   color: white;
   border: 0.5px solid lightgray;
   border-radius: 8px;
@@ -82,5 +82,5 @@
   margin-top: 2%;
   position: absolute;
   left: 43%;
-  padding-top: 3px;
+  padding-top: 5px;
 }
