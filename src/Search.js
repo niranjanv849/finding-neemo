@@ -6,7 +6,7 @@ import Button from "@material-ui/core/Button";
 import { useHistory } from "react-router-dom";
 import { useStateValue } from "./StateProvider";
 import { actionTypes } from "./reducer";
-
+// import ThemeSwitch from "./ThemeSwitch";
 //function main
 function Search({ hideButtons = false }) {
   const [{}, dispatch] = useStateValue();
@@ -29,7 +29,8 @@ function Search({ hideButtons = false }) {
         <input value={input} onChange={(e) => setInput(e.target.value)} />
         <Mic className="search__inputIcon" />
       </div>
-      {!hideButtons ? (
+      <button className="theme__switch">Switch to Dark mode</button>
+      {/* {!hideButtons ? (
         <div className="search__buttons">
           <Button type="submit" onClick={search} variant="outlined">
             Search Google
@@ -50,7 +51,7 @@ function Search({ hideButtons = false }) {
             Feeling Lucky
           </Button>
         </div>
-      )}
+      )} */}
     </form>
   );
 }

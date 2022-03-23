@@ -4,6 +4,14 @@
   height: 100vh;
 }
 
+::selection {
+  background: transparent;
+}
+
+.home > Link {
+  font-weight: 600;
+}
+
 .home__header {
   display: flex;
   justify-content: space-between;
@@ -26,7 +34,14 @@
   display: flex;
   align-items: center;
   min-width: 13vw;
-  justify-content: space-between;
+  justify-content: space-evenly;
+}
+
+.home__headerLeft {
+  display: flex;
+  align-items: center;
+  margin-left: 3%;
+  justify-content: space-evenly;
 }
 
 .home__headerRight > .MuiSvgIcon-root {
@@ -43,4 +58,73 @@
   display: flex;
   margin-top: 10%;
   flex-direction: column;
+}
+
+.texti {
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  /* box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px; */
+  width: 80px;
+  height: 25px;
+  padding-top: 4px;
+  /* font-size: 14px; */
+  /* font-weight: 400; */
+  padding-left: 17px;
+  border-radius: 5px;
+}
+
+.texti:focus {
+  text-decoration: none;
+}
+
+.neemo {
+  position: absolute;
+  left: 700px;
+  top: 175px;
+
+  -webkit-animation: myOrbit 8s linear infinite; /* Chrome, Safari 5 */
+  -moz-animation: myOrbit 8s linear infinite; /* Firefox 5-15 */
+  -o-animation: myOrbit 8s linear infinite; /* Opera 12+ */
+  animation: myOrbit 8s linear infinite; /* Chrome, Firefox 16+, 
+                                                    IE 10+, Safari 5 */
+}
+
+@-webkit-keyframes myOrbit {
+  from {
+    -webkit-transform: rotate(0deg) translateX(50px) rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translateX(50px) rotate(-360deg);
+  }
+}
+
+@-moz-keyframes myOrbit {
+  from {
+    -moz-transform: rotate(0deg) translateX(50px) rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(360deg) translateX(50px) rotate(-360deg);
+  }
+}
+
+@-o-keyframes myOrbit {
+  from {
+    -o-transform: rotate(0deg) translateX(50px) rotate(0deg);
+  }
+  to {
+    -o-transform: rotate(360deg) translateX(50px) rotate(-360deg);
+  }
+}
+
+@keyframes myOrbit {
+  from {
+    transform: rotate(0deg) translateX(50px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(50px) rotate(-360deg);
+  }
+}
+
+.home__inputContainer {
+  margin-top: 5%;
 }

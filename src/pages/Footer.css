@@ -1,0 +1,22 @@
+.footer__text {
+  margin-top: 10px;
+  color: #586dd1;
+  line-height: 0.1px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+  margin-left: 40%;
+  margin-right: 30%;
+  margin-bottom: 1%;
+  width: 20%;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.footer__img {
+  width: 90px;
+  height: 90px;
+}
