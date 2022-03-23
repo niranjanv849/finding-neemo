@@ -20,7 +20,8 @@ function About() {
           <a href="/developer">Niranjan</a> for end-semester college project. If
           you need to report an issue or suggest any other improvements feel
           free to reach me out. you can reach me at my{" "}
-          <a href="/developer">Developer page</a>
+          <a href="/developer">Developer page.</a> Logo Credits:{" "}
+          <a href="https://www.linkedin.com/in/dasaprakash-c/">Dasaprakash C</a>
         </h3>
       </div>
     </div>
