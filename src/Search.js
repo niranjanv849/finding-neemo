@@ -28,9 +28,7 @@ function Search({ hideButtons = false }) {
         <input value={input} onChange={(e) => setInput(e.target.value)} />
         <Mic className="search__inputIcon" />
       </div>
-      <div>
-        <Button className="theme__switche">Switch to Dark mode</Button>
-      </div>
+      <div></div>
       {!hideButtons ? (
         <div className="search__buttons">
           <Button type="submit" onClick={search} variant="outlined">
@@ -53,6 +51,7 @@ function Search({ hideButtons = false }) {
           </Button>
         </div>
       )}
+      {/* <Button className="theme__switche">Switch to Dark mode</Button> */}
     </form>
   );
 }

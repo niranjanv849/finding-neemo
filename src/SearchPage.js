@@ -6,17 +6,18 @@ import Response from "./response";
 import { Link } from "react-router-dom";
 import Search from "./Search";
 import { SearchOutlined } from "@material-ui/icons";
-import { Description } from "@material-ui/icons";
-import { Image } from "@material-ui/icons";
-import { ShoppingBasket } from "@material-ui/icons";
-import { Room } from "@material-ui/icons";
-import { MoreVert } from "@material-ui/icons";
+import { LinkSharp } from "@material-ui/icons";
+import { Casino } from "@material-ui/icons";
+import { ShoppingCart } from "@material-ui/icons";
+import { Fastfood } from "@material-ui/icons";
+import { FavoriteOutlined } from "@material-ui/icons";
+
 //AIzaSyD_Pe5ffz1SVXjkgQYwnRILvdlE8CCeLeI
 //ac547a9613a4b8420
 function SearchPage() {
   const [{ term }, dispatch] = useStateValue();
-  // const { data } = useGoogleSearch(term);
-  const data = Response;
+  const { data } = useGoogleSearch(term);
+  // const data = Response;
   // console.log(data);
   return (
     <div className="searchPage">
@@ -34,27 +35,27 @@ function SearchPage() {
             <div className="searchPage__optionsLeft">
               <div className="searchPage__option">
                 <SearchOutlined />
-                <Link to="/all">All</Link>
+                <Link to="/search">All</Link>
               </div>
               <div className="searchPage__option">
-                <Description />
-                <Link to="/news">News</Link>
+                <LinkSharp />
+                <Link to="/social">Social</Link>
               </div>
               <div className="searchPage__option">
-                <Image />
-                <Link to="/images">Images</Link>
+                <Casino />
+                <Link to="/entertainment">Entertainment</Link>
               </div>
               <div className="searchPage__option">
-                <ShoppingBasket />
+                <ShoppingCart />
                 <Link to="/shopping">Shopping</Link>
               </div>
               <div className="searchPage__option">
-                <Room />
-                <Link to="/maps">Maps</Link>
+                <Fastfood />
+                <Link to="/food">Food</Link>
               </div>
               <div className="searchPage__option">
-                <MoreVert />
-                <Link to="/more">More</Link>
+                <FavoriteOutlined />
+                <Link to="/health">Health</Link>
               </div>
             </div>
             <div className="searchPage__optionsRight">
@@ -89,7 +90,7 @@ function SearchPage() {
                       alt="Images Loading"
                     />
                   )}
-                {item.displayLink}🐠
+                {item.displayLink}
               </a>
               <a className="searchPage__resultTitle" href={item.link}>
                 <h2>{item.title}</h2>
