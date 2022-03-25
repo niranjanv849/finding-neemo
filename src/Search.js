@@ -25,7 +25,11 @@ function Search({ hideButtons = false }) {
     <form className="search">
       <div className="search__input">
         <SearchOutlined className="search__inputIcon" />
-        <input value={input} onChange={(e) => setInput(e.target.value)} />
+        <input
+          value={input}
+          onChange={(e) => setInput(e.target.value)}
+          placeholder="Type in anything for neemo to find"
+        />
         <Mic className="search__inputIcon" />
       </div>
       <div></div>
